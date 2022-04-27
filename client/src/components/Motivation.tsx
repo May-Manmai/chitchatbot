@@ -49,7 +49,9 @@ const Motivation = ({
                     //     allow='autoplay; encrypted-media'
                     // />
                 )}{' '}
-            <div style={{ textAlign: 'right', marginRight: '15px' }}>
+            {responseValue.toLocaleLowerCase() === 'no' &&
+                setQuestionName('happinessTracker')}
+            {/* <div style={{ textAlign: 'right', marginRight: '15px' }}>
                 <Button
                     onClick={() => {
                         setQuestionName('happinessTracker');
@@ -58,7 +60,7 @@ const Motivation = ({
                     variant='outline-light'>
                     Next
                 </Button>
-            </div>
+            </div> */}
         </div>
     );
 };

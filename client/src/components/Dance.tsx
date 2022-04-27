@@ -13,11 +13,11 @@ const Dances = ({
     useEffect(() => {
         if (responseValue != '') {
             axios
-                .get(`/api/giphy?q=${responseValue}%20dance&limit=50`)
+                .get(`/api/giphy?q=${responseValue}%20dance&limit=10`)
                 .then((response) => {
                     console.log(response.data);
                     setGiphyImageUrl(
-                        response.data.data[Math.floor(Math.random() * 50)]
+                        response.data.data[Math.floor(Math.random() * 10)]
                             .images.original.url
                     );
                 });
