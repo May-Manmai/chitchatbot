@@ -36,31 +36,26 @@ const Motivation = ({
             </div>
             {responseValue != '' &&
                 responseValue.toLocaleLowerCase() === 'yes' && (
-                    <iframe
-                        width='560'
-                        height='315'
-                        src='https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpUVmb7rZGEFvo9y5tzT42_0'
-                        title='YouTube video player'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
-                    // <iframe
-                    //     src={youtubeUrl}
-                    //     width='90%'
-                    //     height='500px'
-                    //     allow='autoplay; encrypted-media'
-                    // />
+                    <>
+                        <iframe
+                            width='90%'
+                            height='500px'
+                            src='https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpUVmb7rZGEFvo9y5tzT42_0'
+                            title='YouTube video player'
+                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+                        <Button
+                            onClick={() => {
+                                setQuestionName('happinessTracker');
+                            }}
+                            className='nextButton'
+                            variant='outline-light'>
+                            Next
+                        </Button>
+                    </>
                 )}{' '}
+            <div style={{ textAlign: 'right', marginRight: '15px' }}></div>
             {responseValue.toLocaleLowerCase() === 'no' &&
                 setQuestionName('happinessTracker')}
-            {/* <div style={{ textAlign: 'right', marginRight: '15px' }}>
-                <Button
-                    onClick={() => {
-                        setQuestionName('happinessTracker');
-                    }}
-                    className='nextButton'
-                    variant='outline-light'>
-                    Next
-                </Button>
-            </div> */}
         </div>
     );
 };

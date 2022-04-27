@@ -15,7 +15,7 @@ function HappinessTracker({ handleHappinessTracker, previousQuestion }: any) {
                 <h2>That's cute song. Hope it make you feel better?</h2>
             )}
             {previousQuestion === 'motivation' && (
-                <h2>That's cute motivation. Hope it make you feel better?</h2>
+                <h2>If you're happy and you know it, clap your hands. </h2>
             )}
             {previousQuestion === '' && <h2>How are you?</h2>}
             <Button
@@ -31,7 +31,7 @@ function HappinessTracker({ handleHappinessTracker, previousQuestion }: any) {
             <Button
                 onClick={() => handleHappinessTracker('Happy')}
                 variant='outline-warning'>
-                Happy
+                Happy👏👏👏
             </Button>{' '}
         </div>
     );
