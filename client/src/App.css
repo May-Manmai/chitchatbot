@@ -1,0 +1,115 @@
+img{
+  height: 350px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.App {
+  /* display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  padding: 10px; */
+  text-align: center;
+  }
+
+
+ 
+.chatbox{
+    color: green;
+    font-weight:bold;
+    font-size: large;
+    background-color: black;
+    border:20px solid grey;
+    width: auto;
+    height: 500px;
+  }
+
+
+/* emoji */
+.smily{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 500px;
+  background-color: black;
+  /* border-radius: 50%; */
+  border:20px solid grey;
+}
+.eyes:before,.eyes:after{
+  content: "";
+  position: absolute;
+  top:20%;
+  width: 25px;
+  height: 25px;
+  background: green;
+  border-radius: 50%;
+  transition: 0.5s;
+
+}
+
+.eyes:before{
+    left: 25%;
+}
+.eyes:after{
+    right: 25%;
+}
+
+.smily:hover .eyes:before, .smily:hover .eyes:after{
+  width: 30px;
+  height: 45px;
+}
+
+.lips{
+  position: absolute;
+  width:120px;
+  height: 150px;
+  border-bottom:20px solid green;
+  border-radius:0;
+  transition:0.3s;
+  top:20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Sad{
+  width: 150px;
+  border-radius: 50%;
+  border-bottom:0 transparent;
+  margin-top: 70px;
+  border-top: 30px solid green;
+}
+
+.Happy {
+  width: 150px;
+  border-radius: 50%;
+ 
+}
+
+
+/* emoji */
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
