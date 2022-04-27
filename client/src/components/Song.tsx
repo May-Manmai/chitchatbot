@@ -10,8 +10,9 @@ const Song = ({
 }: ComponentWithHappinessTrackerProps) => {
     const [embedYoutubeID, setEmbedYoutubeID] = useState('');
     const [,] = useState('');
+    // const youtubeUrl = `https://www.youtube.com/embed/${embedYoutubeID}?autoplay=1`;
 
-    const youtubeUrl = `https://www.youtube.com/embed/${embedYoutubeID}?autoplay=1`;
+    const youtubeUrl = `https://www.youtube.com/embed/${embedYoutubeID}`;
     useEffect(() => {
         if (responseValue != '') {
             axios
