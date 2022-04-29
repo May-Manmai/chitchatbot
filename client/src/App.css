@@ -23,6 +23,9 @@ img{
     height: 500px;
   }
 
+  .col-sm-4{
+    background-image: url('../public/robot-svgrepo-com.svg');
+  }
 
 /* emoji */
 .smily{
