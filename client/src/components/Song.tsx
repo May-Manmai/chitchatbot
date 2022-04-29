@@ -7,6 +7,7 @@ const Song = ({
     handleHappinessTracker,
     setQuestionName,
     responseValue,
+    userName,
 }: ComponentWithHappinessTrackerProps) => {
     const [embedYoutubeID, setEmbedYoutubeID] = useState('');
     const [,] = useState('');
@@ -32,7 +33,12 @@ const Song = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>What is your favorite song?</h1>
+                <h1>😀 : What is your favorite song?</h1>
+                {responseValue != '' && (
+                    <h1>
+                        {userName}: {responseValue}{' '}
+                    </h1>
+                )}
             </div>
             <iframe
                 src={youtubeUrl}

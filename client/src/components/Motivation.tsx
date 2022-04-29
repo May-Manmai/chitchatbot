@@ -7,21 +7,18 @@ const Motivation = ({
     handleHappinessTracker,
     setQuestionName,
     responseValue,
+    userName,
 }: ComponentWithHappinessTrackerProps) => {
     const [embedYoutubeID, setEmbedYoutubeID] = useState('');
     const [,] = useState('');
 
-    const youtubeUrl = `https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpUVmb7rZGEFvo9y5tzT42_0?autoplay=1`;
-    // useEffect(() => {
-    //     if (
-    //         responseValue != '' &&
-    //         responseValue.toLocaleLowerCase() === 'yes'
-    //     ) {
-    //         axios.get(`/api/youtube/motivation?`).then((response) => {
-    //             setEmbedYoutubeID(response.data.items[0].id);
-    //         });
-    //     }
-    // }, [responseValue]);
+    const playlist = [
+        `https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpUVmb7rZGEFvo9y5tzT42_0`,
+        `https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpW3VzmqYTu8KbQIy3ErOXOV`,
+        `https://www.youtube.com/embed/videoseries?list=PLJQrUSvEtfThT7XxZxkNkw4D1AJQs1mwu`,
+        `https://www.youtube.com/embed/videoseries?list=PLJQrUSvEtfThRUURhl0gkS_EnIAc9r308`,
+        `https://www.youtube.com/embed/videoseries?list=PLJQrUSvEtfTjLt5H0cQ6VOCendmy4jUab`,
+    ];
 
     return (
         <div
@@ -32,7 +29,12 @@ const Motivation = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>Do you want to watch motivational video?</h1>
+                <h1>😀 : Do you want to watch motivational video?</h1>
+                {responseValue != '' && (
+                    <h1>
+                        {userName}: {responseValue}{' '}
+                    </h1>
+                )}
             </div>
             {responseValue != '' &&
                 responseValue.toLocaleLowerCase() === 'yes' && (
@@ -40,7 +42,7 @@ const Motivation = ({
                         <iframe
                             width='90%'
                             height='500px'
-                            src='https://www.youtube.com/embed/videoseries?list=PLaP74XGaRZpUVmb7rZGEFvo9y5tzT42_0'
+                            src={playlist[Math.floor(Math.random() * 4)]}
                             title='YouTube video player'
                             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
                         <Button

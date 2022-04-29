@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
 const Animals = ({
-    handleHappinessTracker,
     setQuestionName,
     responseValue,
+    userName,
 }: ComponentWithHappinessTrackerProps) => {
     const [giphyImageUrl, setGiphyImageUrl] = useState('');
+
     const [,] = useState('');
 
     useEffect(() => {
@@ -35,7 +36,12 @@ const Animals = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>What is your favorite animal?</h1>
+                <h1>😀 : What is your favorite animal?</h1>
+                {responseValue != '' && (
+                    <h1>
+                        {userName}: {responseValue}{' '}
+                    </h1>
+                )}
             </div>
             <img src={giphyImageUrl} />
             <div style={{ textAlign: 'right', marginRight: '15px' }}>

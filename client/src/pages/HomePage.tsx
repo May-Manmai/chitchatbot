@@ -9,6 +9,7 @@ import HappinessTracker from '../components/HappinessTracker';
 import Dances from '../components/Dance';
 import Song from '../components/Song';
 import Motivation from '../components/Motivation';
+import Greeting from '../components/Greeting';
 
 const HomePage = () => {
     const [questionName, setQuestionName] = useState('happinessTracker');
@@ -23,6 +24,7 @@ const HomePage = () => {
         'song',
         'motivation',
     ]);
+    const [userName, setUserName] = useState('');
 
     const setRandomQuestionName = () => {
         setResponseValue('');
@@ -67,6 +69,7 @@ const HomePage = () => {
                 setQuestionName={setQuestionName}
                 responseValue={responseValue}
                 handleHappinessTracker={handleHappinessTracker}
+                userName={userName}
             />
         ),
         dance: (
@@ -74,6 +77,7 @@ const HomePage = () => {
                 setQuestionName={setQuestionName}
                 responseValue={responseValue}
                 handleHappinessTracker={handleHappinessTracker}
+                userName={userName}
             />
         ),
         song: (
@@ -81,6 +85,7 @@ const HomePage = () => {
                 setQuestionName={setQuestionName}
                 responseValue={responseValue}
                 handleHappinessTracker={handleHappinessTracker}
+                userName={userName}
             />
         ),
         motivation: (
@@ -88,6 +93,7 @@ const HomePage = () => {
                 setQuestionName={setQuestionName}
                 responseValue={responseValue}
                 handleHappinessTracker={handleHappinessTracker}
+                userName={userName}
             />
         ),
     };
@@ -97,7 +103,14 @@ const HomePage = () => {
             <Row>
                 <Col sm={8}>
                     <div className='chatbox'>
-                        {happinessTracker === 'Happy' ? (
+                        {userName === '' ? (
+                            <Greeting
+                                setQuestionName={setQuestionName}
+                                responseValue={responseValue}
+                                setUserName={setUserName}
+                                setResponseValue={setResponseValue}
+                            />
+                        ) : happinessTracker === 'Happy' ? (
                             <>
                                 <h2>Yay you are happy!</h2>
                                 <img src='https://media2.giphy.com/media/l7fdqmHQ1jCg2HzQlx/giphy.gif?cid=f5e8c4195biwmgyceeudgcpn18te3ahkksp58s9cn18fngom&amp;rid=giphy.gif&amp;ct=g' />

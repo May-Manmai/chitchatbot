@@ -7,6 +7,7 @@ const Dances = ({
     handleHappinessTracker,
     setQuestionName,
     responseValue,
+    userName,
 }: ComponentWithHappinessTrackerProps) => {
     const [giphyImageUrl, setGiphyImageUrl] = useState('');
 
@@ -33,7 +34,12 @@ const Dances = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>What is your favorite dance?</h1>
+                <h1>😀 : What is your favorite dance?</h1>
+                {responseValue != '' && (
+                    <h1>
+                        {userName}: {responseValue}{' '}
+                    </h1>
+                )}
             </div>
             <img src={giphyImageUrl} />
             <div style={{ textAlign: 'right', marginRight: '15px' }}>
