@@ -34,7 +34,7 @@ const Dances = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>😀 : What is your favorite dance?</h1>
+                <h3>😀 Botty : What is your favorite dance?</h3>
                 {responseValue != '' && (
                     <h1>
                         {userName}: {responseValue}{' '}

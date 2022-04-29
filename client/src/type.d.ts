@@ -4,4 +4,5 @@ interface ComponentWithHappinessTrackerProps {
   responseValue: string;
   handleHappinessTracker?: (emotion: EmotionType) => void; 
   userName ?: string
+  happinessTracker ?: string
 }

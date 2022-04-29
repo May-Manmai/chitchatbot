@@ -33,11 +33,15 @@ const Song = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>😀 : What is your favorite song?</h1>
+                <h3>
+                    😀 Botty : Play the moment. Pause the memories. Stop the
+                    pain. What is your favorite song?
+                </h3>
+
                 {responseValue != '' && (
-                    <h1>
+                    <h3>
                         {userName}: {responseValue}{' '}
-                    </h1>
+                    </h3>
                 )}
             </div>
             <iframe

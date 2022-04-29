@@ -54,15 +54,12 @@ const HomePage = () => {
         }
     };
 
-    // const setQuestion = (questionName: string) => {
-    //     return setQuestionName(questionName);
-    // };
-
     const questions: any = {
         happinessTracker: (
             <HappinessTracker
                 handleHappinessTracker={handleHappinessTracker}
                 previousQuestion={previousQuestion}
+                userName={userName}
             />
         ),
         animal: (
@@ -71,6 +68,7 @@ const HomePage = () => {
                 responseValue={responseValue}
                 handleHappinessTracker={handleHappinessTracker}
                 userName={userName}
+                happinessTracker={happinessTracker}
             />
         ),
         dance: (

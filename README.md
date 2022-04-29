@@ -7,11 +7,13 @@ For more explanation, see [this](https://gist.github.com/imaginetheheadline/a51b
 ## For development
 
 Auto install all dependencies for client and server:
+
 ```
 npm install
 ```
 
 Run a development server for React and an Express Back end with `nodemon` auto re-start and `ts-node`
+
 ```
 npm run dev
 ```
@@ -23,16 +25,19 @@ Head to `localhost:3000` for development. The Express API runs on port 3001 and 
 You can mimic what Heroku will do in production by running the following.
 
 Auto install all dependencies for client and server:
+
 ```
 npm install
 ```
 
 Build a production React App
+
 ```
 npm build
 ```
 
 Start a production server:
+
 ```
 npm run start:local
 ```
@@ -51,3 +56,6 @@ nvm use
 ```
 
 Heroku will use the version defined in `package.json` `"engines"` property. Make sure `.nvmrc` and `package.json` versions of Node match.
+
+CREDIT
+https://www.svgrepo.com/

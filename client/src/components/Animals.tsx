@@ -7,6 +7,7 @@ const Animals = ({
     setQuestionName,
     responseValue,
     userName,
+    happinessTracker,
 }: ComponentWithHappinessTrackerProps) => {
     const [giphyImageUrl, setGiphyImageUrl] = useState('');
 
@@ -36,7 +37,11 @@ const Animals = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h1>😀 : What is your favorite animal?</h1>
+                <h3>
+                    😀 Botty : I know that you feel{' '}
+                    {happinessTracker?.toLocaleLowerCase()}. What is your
+                    favorite animal?
+                </h3>
                 {responseValue != '' && (
                     <h1>
                         {userName}: {responseValue}{' '}

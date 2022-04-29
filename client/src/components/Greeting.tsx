@@ -15,27 +15,20 @@ const Greeting = ({
     }, [responseValue]);
 
     return (
-        <div
-            style={{
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-around',
-            }}>
+        <div>
             <div>
-                <h3>😀 : Hi there! My name is Botty. What is your name?</h3>
+                <h3>
+                    😀 Botty : Hi there! My name is Botty. What is your name?
+                </h3>
             </div>
-            {responseValue != '' && (
-                <>
-                    <h3>
-                        😀 : That is very cute name. Nice to meet you!{' '}
-                        {responseValue} Are you ready to be happy?
-                    </h3>
-                </>
-            )}{' '}
-            <div style={{ textAlign: 'right', marginRight: '15px' }}></div>
+            {/* {responseValue != '' && (
+                <h3>
+                    😀 : That is very cute name. Nice to meet you!{' '}
+                    {responseValue} Are you ready to be happy?
+                </h3>
+            )}
             {responseValue.toLocaleLowerCase() === 'yes' &&
-                setQuestionName('happinessTracker')}
+                setQuestionName('happinessTracker')} */}
         </div>
     );
 };
