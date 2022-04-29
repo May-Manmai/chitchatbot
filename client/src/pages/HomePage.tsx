@@ -10,6 +10,7 @@ import Dances from '../components/Dance';
 import Song from '../components/Song';
 import Motivation from '../components/Motivation';
 import Greeting from '../components/Greeting';
+import About from './About';
 
 const HomePage = () => {
     const [questionName, setQuestionName] = useState('happinessTracker');

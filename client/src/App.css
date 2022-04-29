@@ -13,7 +13,8 @@ img{
 
 
  
-.chatbox{
+.chatbox{margin-top: 10px ;
+    
     color: green;
     font-weight:bold;
     font-size: large;
@@ -25,6 +26,9 @@ img{
 
   .col-sm-4{
     background-image: url('../public/robot-svgrepo-com.svg');
+    Background-size: 560px;
+    Background-position: center;
+    background-repeat: no-repeat;
   }
 
 /* emoji */

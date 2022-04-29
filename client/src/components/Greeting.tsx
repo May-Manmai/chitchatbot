@@ -23,10 +23,7 @@ const Greeting = ({
                 justifyContent: 'space-around',
             }}>
             <div>
-                <h3>
-                    😀 : Hi there! How are you? My name is Botty. What is your
-                    name?
-                </h3>
+                <h3>😀 : Hi there! My name is Botty. What is your name?</h3>
             </div>
             {responseValue != '' && (
                 <>
