@@ -65,6 +65,11 @@ nvm use
 
 Heroku will use the version defined in `package.json` `"engines"` property. Make sure `.nvmrc` and `package.json` versions of Node match.
 
+## API
+
+Youtube API
+Giphy API
+
 ## CREDIT
 
 https://www.svgrepo.com/
