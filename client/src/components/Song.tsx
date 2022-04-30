@@ -39,8 +39,8 @@ const Song = ({
                 </h3>
 
                 {responseValue != '' && (
-                    <h3>
-                        {userName}: {responseValue}{' '}
+                    <h3 style={{ textAlign: 'right' }}>
+                        🙂 {userName}: {responseValue}
                     </h3>
                 )}
             </div>

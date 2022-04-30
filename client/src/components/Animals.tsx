@@ -43,9 +43,9 @@ const Animals = ({
                     favorite animal?
                 </h3>
                 {responseValue != '' && (
-                    <h1>
-                        {userName}: {responseValue}{' '}
-                    </h1>
+                    <h3 style={{ textAlign: 'right' }}>
+                        🙂 {userName}: {responseValue}
+                    </h3>
                 )}
             </div>
             <img src={giphyImageUrl} />

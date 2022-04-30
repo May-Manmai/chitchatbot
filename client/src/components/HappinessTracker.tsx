@@ -11,20 +11,19 @@ function HappinessTracker({
         <div className='happinessTracker'>
             {previousQuestion === 'animal' && (
                 <h3>
-                    😀 Botty : That's cute animal, {userName}. Hope it make you
-                    feel better?
+                    😀 Botty : Awwww very cute animal! How are you feeling now?
                 </h3>
             )}
             {previousQuestion === 'dance' && (
                 <h3>
-                    😀 Botty : That's cute dance, {userName}. Hope it make you
-                    feel better?
+                    😀 Botty : I saw that you've just danced, {userName}!! What
+                    emotion is coming up for you now?
                 </h3>
             )}
             {previousQuestion === 'song' && (
                 <h3>
-                    😀 Botty : You are doing well, {userName} That's cute song.
-                    Hope it make you feel better?
+                    😀 Botty : Oh yeah! This song is sick, {userName}. How are
+                    you feeling now after listening to it?
                 </h3>
             )}
             {previousQuestion === 'motivation' && (

@@ -24,17 +24,18 @@ const Motivation = ({
         <>
             <div>
                 <h3 className='motivation_question'>
-                    😀 Botty : Do you want to watch motivational videos?
+                    😀 Botty : I've got you, {userName}. Do you want to watch
+                    motivational videos? Just tell me "Yes" or "No" please.
                 </h3>
                 {responseValue != '' && (
-                    <h3>
-                        {userName}: {responseValue}{' '}
+                    <h3 style={{ textAlign: 'right' }}>
+                        🙂 {userName}: {responseValue}
                     </h3>
                 )}
             </div>
             <div
                 style={{
-                    height: '82%',
+                    height: '77%',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-around',

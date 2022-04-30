@@ -1,5 +1,5 @@
 img{
-  height: 350px;
+  height: 363px;
   max-width: 100%;
   object-fit: contain;
 }
@@ -19,13 +19,11 @@ img{
     font-weight:bold;
     font-size: 14px;
     background-color: black;
-    border:20px solid grey;
+    border:30px solid grey;
     width: auto;
-    height: 500px;
+    height: 600px;
     padding: 20px;
   }
-
-  
 
   .col-sm-4{
     background-image: url('../public/happy_bot.svg');
@@ -128,4 +126,9 @@ img{
   to {
     transform: rotate(360deg);
   }
+}
+
+#aboutBox {
+  text-align: center;
+  
 }

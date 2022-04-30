@@ -1,8 +1,16 @@
-# React App with Express Backend
+# ChitChat App : React App with Express Backend
 
-This structure can be used to build a React front end with an ExpressJS back end and provides a way to work in development by running a React Dev Server along with the API backend, and also to run a unified back end/front end when pushed to Heroku. It also includes TypeScript for both client and server.
+ChitChatBot is for anyone who wants a friend with no drama. You can simply have a simple conversation,
+share a laugh, or get emotional support anywhere anytime! This AI friend will talk to you untill you
+are Happy and claping your hands 👏👏👏.
 
-For more explanation, see [this](https://gist.github.com/imaginetheheadline/a51bbdc5b53e58fff472997166616452).
+This app is built by a React front end with an ExpressJS back end and provides a way to work in development by running a React Dev Server along with the API backend, and also to run a unified back end/front end when pushed to Heroku. It also includes TypeScript for both client and server.
+
+https://github.com/May-Manmai/chitchatbot.git
+
+## Heroku access
+
+https://lit-ridge-01907.herokuapp.com/
 
 ## For development
 
@@ -57,5 +65,7 @@ nvm use
 
 Heroku will use the version defined in `package.json` `"engines"` property. Make sure `.nvmrc` and `package.json` versions of Node match.
 
-CREDIT
+## CREDIT
+
 https://www.svgrepo.com/
+https://react-bootstrap.netlify.app/
