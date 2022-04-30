@@ -56,7 +56,7 @@ const About = () => {
                                 aria-label='Large'
                                 aria-describedby='inputGroup-sizing-sm'
                             />
-
+                            {/* 
                             <Button
                                 onClick={() => {
                                     setResponseValue(inputValue);
@@ -65,7 +65,7 @@ const About = () => {
                                 variant='outline-secondary'
                                 id='button-addon2'>
                                 Enter
-                            </Button>
+                            </Button> */}
                         </InputGroup>
                     </div>
                 </Col>
